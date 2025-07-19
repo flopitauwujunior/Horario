@@ -1,65 +1,93 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #d0f0ff; /* Fondo celeste */
+  background: #d0f0ff; /* Fondo celeste pastel */
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .titulo {
   font-family: 'Great Vibes', cursive;
-  font-size: 2.5em;
-  color: #000; /* Título negro */
-  margin-top: 20px;
+  font-size: 3em;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .frase-motivacional {
-  margin-top: -10px;
   font-style: italic;
   color: #444;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 1em;
+  background-color: #ffffffaa;
+  padding: 8px 20px;
+  border-radius: 15px;
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   width: 90vw;
   max-width: 1000px;
   margin-bottom: 20px;
-  background-color: #ffffffcc;
-  border-radius: 8px;
+  background-color: #ffffffee;
+  border-radius: 15px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
   border: 1px solid #ccc;
   text-align: center;
-  padding: 8px;
+  padding: 10px;
+}
+
+th:first-child,
+td:first-child {
+  border-top-left-radius: 15px;
+}
+
+th:last-child,
+td:last-child {
+  border-top-right-radius: 15px;
 }
 
 td[contenteditable="true"] {
   background-color: #fff9fd;
+  transition: background-color 0.3s ease;
+}
+
+td[contenteditable="true"]:focus {
+  background-color: #ffe9f4;
+  outline: none;
 }
 
 .botones-horario {
   margin-bottom: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .botones-horario button {
-  margin: 0 5px;
-  padding: 6px 12px;
+  padding: 10px 20px;
   border: none;
   background-color: #a4d7ff;
   color: #000;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .botones-horario button:hover {
   background-color: #89cfff;
+  transform: translateY(-2px);
 }
