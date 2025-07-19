@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Frases motivacionales 🎀
   const frases = [
-    "¡Hoy será un gran día! 💫",
-    "Confía en ti misma ✨",
-    "Pequeños pasos, grandes logros 🌱",
-    "Eres capaz de cosas increíbles 🌟",
+    "¡Hoy será un gran día! 🩷",
+    "No te rindas, lo mejor está por venir 🩷",
+    "Cree en ti misma 🩷",
+    "Paso a paso se logra todo 🩷",
+    "¡Puedes con esto y más! 🩷"
     "Organízate con amor y constancia 💕"
   ];
   document.getElementById("fraseMotivacional").textContent =
